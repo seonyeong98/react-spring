@@ -6,6 +6,7 @@ import Write from "../Board/Write";
 import BoardMain from "../Board/BoardMain";
 import Detail from "../Board/Detail";
 import BoardMain from "./src/Board/BoardMain";
+import Delete from "./src/Board/Delete";
 
 class DefaultApp extends Component {
     render() {
@@ -19,6 +20,7 @@ class DefaultApp extends Component {
                         <Route path="/board-write" exact component={Write} />
                         <Route path="/BoardMain" exact component={BoardMain} />
                         <Route path="/board-detail" exact component={Detail} />
+                        <Route path="/board-delete" exact component={Delete} />
                     </Switch>
                 </main>
             </Router>
